@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <style>
+             body{
+        background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9naW58ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    .head{
+        font-size:50px ;
+        margin-left:500px;
+        margin-top:50px;
+        color: aliceblue;
+    }
+    .hom{
+        color:aliceblue;
+    }
+    .main{
+        font-size:40px;
+        padding-top: 50px;
+        margin-left:500px;
+        margin-top:50px;
+        color:aliceblue;
+    }
+
+    *,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #121317;
+}
+main{
+  height: 100vh;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color:black;
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  color: #ffffff;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+.hm,.mh,.jh,.hj{
+   font-size:50px;
+   margin-bottom:50px; 
+
+}
+
+.hom{
+    font-size:50px;    
+}
+.hom:hover{
+    color:black;
+}
+.hom:active{
+    color:white;
+}
+.hm:hover{
+    color:black;
+}
+.mh:hover{
+    color:black;
+}
+.jh:hover{
+    color:black;
+}
+.hj:hover{
+    color:black;
+}
+.hm:active{
+    color:white;
+}
+.mh:active{
+    color:white;
+}
+.jh:active{
+    color:white;
+}
+.hj:active{
+    color:white;
+}
+        </style>
+
+    </head>
+    <body>
+        <div class="head">
+            <a href="/index/" class="hom">HOME</a>
+        </div>
+        <div class="main">
+        
+             <a href="addemploy/" class="hm">ADD EMPLOYEE</a></li><br><br>
+            <a href="viewemploy/" class="mh">VIEW EMPLOYEE</a><br><br>
+            <a href="ViewCustomer/" class="jh">VIEW CUSTOMER</a><br><br>
+            <a href="index/" class="hj">LOGOUT</a><br><br> 
+            
+            
+        </ul>
+        </div>
+    </body>
+    </html>

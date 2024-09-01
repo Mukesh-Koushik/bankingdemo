@@ -1,0 +1,107 @@
+<html>
+    <title>EmployeeHome</title>
+    <body>
+        <div class="box">
+            <nav>
+            <ul class="div">
+                <li><a href="/index" class="logo">OnlineBanking</a></li>
+                <li><a href="/newaccount/" class="home">NewAccount</a></li>
+                <li><a href="/custprofile/" class="home">ViewProfile</a></li>
+                <li><a href="/transfer" class="home">Transfer</a></li>
+                <li><a href="/index" class="home">Logout</a></li>
+            </ul>
+            </nav>
+            </div>
+            <center>
+            <form action="/newDB/" method="get">
+                <label for="text">CustomerNO:</label>
+                <tr><td><input type="text" name="t1" placeholder="Enter Customer Number" class="input"></td></tr><br><br>
+                <label for="text">CustomerName:</label>
+                <tr><td><input type="text" name="t2" placeholder="Enter Customer Name" class="input"></td></tr><br><br>
+                <label for="text">CustomerAddress:</label>
+                <tr><td><input type="text" name="t3" placeholder="Enter Customer Address" class="input"></td></tr><br><br>
+                <label for="text">CustomerGmail:</label>
+                <tr><td><input type="email" name="t4" placeholder="Enter Customer Email" class="input"></td></tr><br><br>
+                <label for="text">CustomerContact:</label>
+                <tr><td><input type="text" name="t5" placeholder="Enter Customer Contact" class="input"></td></tr><br><br>
+                <label for="text"> CustomerPassword:</label>
+                <tr><td><input type="password" name="t6" placeholder="Enter Customer Password" class="input"></td></tr><br><br>
+                <label for="text">CustomerBalance:</label>
+                <tr><td><input type="text" name="t7" placeholder="Enter Customer Balance" class="input"></td></tr><br><br>
+                <tr><td align=center><input type="submit" value="AddCustomer"></td></tr>
+				</form>
+            </center>
+            
+            <style>
+                 body {
+                font-family: "Times New Roman", Georgia, Serif;
+                background-color: whitesmoke;
+                background-image: url("https://static.wixstatic.com/media/c4d48f_a8e898718d184259a9a87a57bc62b946~mv2.png/v1/fill/w_560,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c4d48f_a8e898718d184259a9a87a57bc62b946~mv2.png");
+                background-repeat: no-repeat;
+                background-size: 1300px 600px;
+            }
+            nav,ul,li{
+                display: inline-block;
+                list-style-type: none;
+                padding-left: 40px;
+                margin: 0;
+                padding: 10px;
+            }
+            li,a{
+                color: black;
+                text-decoration:none;
+                padding-left: 40px,50px;
+            }
+            .logo{
+                margin-right: 550px;
+                font-size: 30px;
+                font-weight: bold;
+                color: black;
+            }
+            .home:hover{
+                background-color:white;
+                padding: 11px;
+                transition: 0.8s;
+                border-radius: 30px;
+            }
+            .home:active{
+                background-color:rgb(34, 27, 27);
+                transition: 0.4s;
+                padding: 11px;
+            }
+            li,a{
+                color: black;
+                text-decoration:none;
+                padding-left: 40px 50px;
+                font-size: 19px;
+            }
+            .input{
+                padding: 10px 40px;
+                border-radius: 25px;
+            }
+            label{
+                font-size: 19px;
+                color: black;
+                font-weight: bold;
+            }
+            .btn{
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 15px;
+                cursor: pointer;
+                color: black;
+            }
+            .btn:hover{
+                background-color: black;
+                transition: 0.4s;
+                color: white;
+            }
+            .btn:active{
+                background-color: rgb(95, 86, 86);
+                transition: 0.4s;
+                color: black;
+            }
+
+            </style>
+    </body>
+</html>

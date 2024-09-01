@@ -1,0 +1,132 @@
+<html>    
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/18/08/35/finance-4858797_640.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+    main{
+  height: 100vh;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color:black;
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  color: black;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+.main{
+    margin-bottom: 100px;
+}
+.hj{
+  font-size: 30px;
+    font-family: fantasy;
+    color:white;
+    margin-right:440px; 
+}
+.jh,.hm,.mh,.lk{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    margin-right: 30px;
+}
+.tb{
+  color:white;
+}
+.i1,.i2,.i3,.i4,.i5,.i6{
+        font-size:xx-large;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:black;
+}
+.forme{
+    padding-left:460px;
+}
+.b1{
+    font-size:x-large;
+        color:black;
+        background-color:aliceblue;
+        border-color: transparent;
+        border-radius: 15px;
+        margin-left: 300px;
+}
+.b1:hover{
+        color:white;
+        background-color:black;
+}
+.b1:active{
+    color:black;
+    background-color:white;
+}
+.ip6,.ip5,.ip4,.ip3,.ip2,.ip1{
+    border-radius: 20px;
+}
+</style>
+</head>
+<body>
+ <div class="main">
+			<a href="/index/" class="hom">HOME</a>
+             <a href="/addemploy/" class="hm">ADD EMPLOYEE</a></li><br><br>
+            <a href="/viewemploy/" class="mh">VIEW EMPLOYEE</a><br><br>
+            <a href="/ViewCustomer/" class="jh">VIEW CUSTOMER</a><br><br>
+            <a href="/index/" class="hj">LOGOUT</a><br><br> 
+ </div>
+ <div class="forme">
+	<form method="get" action="/addemployDB/">
+    <label class="i1">EMPLOYEE ID:</label>
+    <input class="ip1"type="text" name="t1" placeholder="ENTER EMPLOYEE ID">
+    <br>
+    <label class="i2">EMPLOYEE NAME:</label>
+    <input class="ip2" type="text" name="t2" placeholder="ENTER EMPLOYEE NAME">
+    <br>
+    <label class="i3">EMPLOYEE EMAIL:</label>
+    <input class="ip3" type="email" name="t3" placeholder="ENTER EMPLOYEE EMAIL">
+    <br>
+    <label class="i4" >EMPLOYEE CONTACT:</label>
+    <input class="ip4"type="number" name="t4" placeholder=" ENTER EMPLOYEE CONTACT">
+    <br>
+    <label class="i5">EMPLOYEE PASSWORD:</label>
+    <input class="ip5"type="password" name="t5" placeholder="ENTER EMPLOYEE PASSWORD">
+    <br>
+    <label class="i6">EMPLOYEE SALARY:</label>
+    <input  class="ip6" type="number" name="t6" placeholder="ENTER EMPLOYEE SALARY">
+    <br>
+    <button class="b1">ADD EMPLOYEE</button>
+	</form>
+
+ </div>

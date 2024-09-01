@@ -1,0 +1,90 @@
+<html>
+    <title>CustomerLogin</title>
+    <body>
+        <div class="box">
+            <nav>
+            <ul class="div">
+               <li><a href="/index" class="logo">Online Banking</a></li>
+                <li><a href="about" class="home">About</a></li>
+                <li><a href="/adminlogin/" class="home">AdminLogin</a></li>
+                <li><a href="/employlogin" class="home">EmployeeLogin</a></li>
+                <li><a href="/customerlogin" class="home">CustomerLogin</a></li>
+                <li><a href="contact" class="home">Contact</a></li>
+            </nav>
+            </div>
+        <center>
+		<form method="get" action="/CustomerLoginDB/">
+        <h1>Customer Login Form</h1><br>
+        <label >UserName:</label>
+        <input type="text" placeholder="Enter name" name="uname" class="input"></input><br><br>
+        <label >Password:</label>
+        <input type="password" placeholder="Enter Password" name="pwd" class="input"></input><br><br>
+        <button class="btn">Submit</button>
+        <button class="btn">Clear</button>
+		</form>
+        </center>  
+        <style>
+            body{
+                font-family: "Times New Roman", Georgia, Serif;
+                background-color: whitesmoke;
+                background-image: url("https://mltfwbciccuo.i.optimole.com/VDZzwSs-EPil3Iz1/w:1500/h:1001/q:auto/https://www.evalueserve.com/wp-content/uploads/2021/04/shutterstock_366578660.jpg");
+                background-repeat: no-repeat;
+                background-size:1300px 600px;
+            }
+            nav,ul,li{
+                display: inline-block;
+                list-style-type: none;
+                padding-left: 40px;
+                margin: 0;
+                padding: 10px;
+            }
+            li,a{
+                color: white;
+                text-decoration:none;
+                padding-left: 40px 50px;
+                font-size: 19px;
+            }
+            .logo{
+                margin-right: 400px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .home:hover{
+                background-color: black;
+                padding: 11px;
+                transition: 0.8s;
+                border-radius: 30px;
+            }
+            .home:active{
+                background-color:black;
+                padding: 11px;
+                transition: 0.3s;
+            }
+            .input{
+                padding: 10px 20px;
+                border-radius: 25px;
+            }
+            label{
+                font-size: 25px;
+                font-weight: bold;
+                color: white;
+            }
+            .btn{
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color: black;
+                transition: 0.4s;
+                color: white;
+            }
+            .btn:active{
+                background-color: rgb(95, 86, 86);
+                transition: 0.4s;
+                color: white;
+            }
+        </style>
+        </body>
+</html>

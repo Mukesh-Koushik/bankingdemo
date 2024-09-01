@@ -1,0 +1,117 @@
+<html>    
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/10/22/37/credit-card-1730085_1280.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+    main{
+  height: 100vh;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color:black;
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  color: black;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+.main{
+    margin-bottom: 100px;
+}
+.hj{
+  font-size: 30px;
+    font-family:Times New Roman;
+    color:white;
+    margin-right:400px; 
+}
+.jh,.hm,.mh,.lk{
+    font-size: 20px;
+    font-family: Times New Roman;
+    color:white;
+    margin-right: 30px;
+}
+.tb{
+  color:white;
+}
+</style>
+</head>
+<body>
+ <div class="main">
+    <a href="/index/" class="hj">HOME</a>
+    <a href="/addemploy/" class="jh">ADD EMPLOYEE</a>
+    <a href="/viewemploy/" class="hm">VIEW EMPLOYEE</a>
+    <a href="/ViewCustomer/" class="mh">VIEW CUSTOMER</a>
+    <a href="/index/" class="lk">LOGOUT</a>
+ </div>   
+ <table width=900 border=1 class="tb">  
+    
+    <tr>   
+        <th>ano</th>  
+        <th>cname</th> 
+        <th>cadd</th> 		
+        <th>cmail</th>  
+        <th>cContact</th>  
+		<th>cPassword</th>
+		<th>cbal</th>
+         
+    </tr>  
+    
+    
+{% for customer in customers %} 
+    <tr>  
+        <td>{{ customer.id }}</td>  
+		<td>{{ customer.ano }}</td>
+        <td>{{ customer.cname }}</td>  
+        <td>{{ customer.cemail }}</td>  
+        <td>{{ customer.ccontact }}</td>  
+		<td>{{ customer.cpassword }}</td>
+		<td>{{ customer.cbal }}</td>
+        
+    </tr>  
+{% endfor %}  
+    
+</table>  
+
+
+ 
+</body>
+</html>

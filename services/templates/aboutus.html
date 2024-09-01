@@ -1,0 +1,103 @@
+<html>
+    <head>
+<style>
+    body{
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_640.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+       main{
+  height: 100vh;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color:white;
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  color: chocolate;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+.main{
+    margin-bottom: 100px;
+}
+.hj{
+    font-size: 30px;
+    font-family:Times New Roman;
+    color:white;
+}
+.P1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color:white;    
+}
+h1{
+  font-size: 70px;
+  font-weight: bold;
+  font-style: italic;
+  color:white;     
+}
+.foot{
+    font-size: 30px;
+    color: azure;
+    width:1350px;
+    position:relative;
+    right:10px;
+    top:20px;
+}
+.fo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+</style>
+    </head>
+    <body>
+        <div class="main">
+             <a href="/index/" class="hj">HOME</a>
+        </div> 
+        <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">ABOUT US</h1>  
+      <p1 ID="P1" class="p1">WE ARE STUDENTS OF RAGHU INSTITUTE TECHNOLOGY 2ND YEAR CSD BRANCH 2022-2026 BATCH,OUR MAIN OBJECTIVE IS TO IMPROVE OUR SKILLS AND GAIN EXPERIENCE AND GET INTERNSHIP OPPORTUNITIES.SO WE DESIGN CUSTOM WEBPAGES AND WEB APPLICATIONS FOR LOW COST.FOR MORE INFORMATION CONTACT US..</p1>    
+    <div class="foot">
+        <dt id="fo">
+           <dl>CONTACT US:</dl>
+           <dd>K.MUKESH:+91 9515529584</dd> 
+           <dd>K.KIRAN:+91 6302041057</dd>
+           <dd>P.MANOJ:+91 9573721122</dd>
+        </dt>
+    </div>
+    </body>
+</html>

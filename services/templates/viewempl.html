@@ -1,0 +1,120 @@
+<html>    
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/18/08/35/finance-4858797_640.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+    main{
+  height: 100vh;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color:black;
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  color: black;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+.main{
+    margin-bottom: 100px;
+}
+.hj{
+  font-size: 30px;
+    font-family: fantasy;
+    color:white;
+    margin-right:350px; 
+}
+.jh,.hm,.mh,.lk{
+    font-size: 30px;
+    font-family: fantasy;
+    color:white;
+    margin-right: 30px;
+}
+.tb{
+  color:white;
+}
+.table{
+	color:white;
+}
+</style>
+</head>
+<body>
+ <div class="main">
+    <a href="/index/" class="hj">HOME</a>
+    <a href="/addemploy/" class="jh">ADD EMPLOYEE</a>
+    <a href="/viewemploy/" class="hm">VIEW EMPLOYEE</a>
+    <a href="/ViewCustomer/" class="mh">VIEW CUSTOMER</a>
+    <a href="/index/" class="lk">LOGOUT</a>
+ </div>   
+ <div style="padding-top:80px;padding-left:10px;">
+    <table width=880 border=1 class="table">  
+        
+        <tr>  
+            <th>EmpID</th>  
+            <th>EmpName</th>  
+            <th>EmpEmail</th>  
+            <th>EmpContact</th>  
+            <th>EmpPassword</th>
+            <th>EmpSalary</th>
+            
+        </tr>  
+        
+        
+    {% for employee in employees %}  
+        <tr>  
+            <td>{{ employee.eid }}</td>  
+            <td>{{ employee.ename }}</td>  
+            <td>{{ employee.eemail }}</td>  
+            <td>{{ employee.econtact }}</td>  
+            <td>{{ employee.password }}</td>
+            <td>{{ employee.esal }}</td>
+                
+        </tr>  
+    {% endfor %}  
+        
+    </table>  
+    </div> 
+
+
+ 
+</body>
+</html>

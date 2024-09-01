@@ -1,0 +1,137 @@
+<html>
+    <head>
+   <style>
+    .topbar{
+     border-bottom:2px solid;
+     border-bottom-color:transparent ;
+     background-color:transparent;
+     background-size: cover;
+    }
+    .hb,.aboutb,.adminlog,.employeelog,.customerlog,.contact{
+        font-size:x-large;
+        color:white;
+        background-color:blueviolet;
+        border-color: transparent;
+        border-radius: 15px;
+    }
+    .sub,.clr{
+        font-size:x-large;
+        color:white;
+        background-color:chocolate;
+        border-color: transparent;
+        border-radius: 15px;
+    }
+    .hb{
+     margin-right:400px;
+    }   
+    body{
+        background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9naW58ZW58MHx8MHx8fDA%3D&w=1000&q=80IMG');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .logo{
+        color:white;
+        font-size: 30px;
+        margin-right: 300px;
+        font-weight: bold;
+    }
+    .home{
+        color:white;
+        font-size:20px;
+        font-weight:bold;
+        padding:8px;
+    }
+    .sub:hover{
+        background-color: lightgrey;   
+    }
+    .clr:hover{
+        background-color: lightgrey;
+    }
+    .sub:active{
+        background-color: black;
+    }    
+    .clr:active{
+        background-color: black;
+    }
+    .home:hover{
+        background-color:black;
+        transition: 2s;
+        border-radius: 30px;
+    }
+    .logo:hover{
+        background-color:black;
+        transition: 2s;
+        border-radius: 30px;
+    }
+    .home:active{
+        background-color: aliceblue;
+    }
+    .logo:active{
+        background-color:white;
+    }
+    .formad{
+        padding-top: 50px;
+        padding-left: 590px;
+    }
+    .idl,.ud,.pass{
+        font-size:xx-large;
+        color:black;
+    }
+    .te{
+        padding:15px ;
+        border-radius: 20px;
+    }
+    .pas{
+        padding:15px;
+        border-radius:20px;
+    }
+    nav,ul,li{
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 40px;
+  margin: 0;
+  padding: 10px;
+}
+li,a{
+  color: white;
+  text-decoration:none;
+  padding-left: 40px 50px;
+}
+   </style>
+    </head>
+    <body>
+    <div class="topbar">  
+        <nav>
+            <ul class="div">
+                <li><a href="/index" class="logo">HOME</a></li>
+                <li><a href="/aboutus/" class="home">About</a></li>
+                <li><a href="/adminlogin/" class="home">AdminLogin</a></li>
+                <li><a href="/employlogin" class="home">EmployeeLogin</a></li>
+                <li><a href="/customerlogin" class="home">CustomerLogin</a></li>
+                <li><a href="/aboutus/" class="home">Contact</a></li>
+            </ul>
+            </nav>  
+    </div>
+    <div class="formad">
+    <form method="get" action="/AdminLoginDB/">
+     <h1 class="idl"><b>ADMIN LOGIN</b></h1>
+     <br>
+     <label class="ud"  ><bold>USERNAME:</bold></label>
+     <input type="text" name="uname" placeholder="ENTER YOUR USERNAME" class="te">
+     <br>
+     <br>
+     <label class="pass" ><bold>PASSWORD:</bold></label>
+     <input type="password" name="pwd" placeholder="ENTER YOUR PASSWORD" class="pas">
+     <br>
+     <br>
+     <br>
+     <input type="submit" class="sub">
+     <input type="reset" class="clr">
+    </form>
+
+    </div>
+    </body>
+    </html>   
